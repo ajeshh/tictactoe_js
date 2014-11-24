@@ -1,0 +1,40 @@
+body{
+
+	text-align:center;
+	
+}
+
+
+
+
+
+
+#container {
+	margin-left: auto;
+    margin-right: auto;
+	height: 200px;
+	width: 200px;
+	padding-top: 20px;
+
+}
+
+
+.row {
+	height: 50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+	width: 100%;
+
+}
+
+.box {
+	width: 25%;
+	height: 65%;
+	margin: 4px 0px 4px 7px;
+	text-align: center;
+	padding-top: 10px;
+	color: black;
+	float: left;
+	border: 2px solid black;
+}
