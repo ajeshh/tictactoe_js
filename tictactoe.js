@@ -14,22 +14,24 @@ function divClicked(divNumber) {
 		alert("spot taken");}
 	
 	else{
-	turn+=1;
+		turn+=1;
 
 	if (turn % 2){ 
-	d.innerHTML = "X";
-	d.style.backgroundColor = "red"; 
-	d.style.color = "gold";
-	x.push(divNumber);
-	playerTurn.innerHTML = "O's turn";
+		d.innerHTML = "X";
+		d.style.backgroundColor = "red"; 
+		d.style.color = "gold";
+		x.push(divNumber);
+		playerTurn.innerHTML = "O's turn";
+		}
+	else {
+		d.innerHTML = "O";
+		d.style.backgroundColor = "blue";
+		d.style.color = "white";
+		o.push(divNumber);
+		playerTurn.innerHTML = "X's turn";
+		}
 	}
-	else {d.innerHTML = "O";
-	d.style.backgroundColor = "blue";
-	d.style.color = "white";
-	o.push(divNumber);
-	playerTurn.innerHTML = "X's turn";
-	}
-	}
+	
 	for (var i = 0; i < winCombo.length; i++) {
 		if(x.indexOf(winCombo[i][0]) >= 0) {
 			if(x.indexOf(winCombo[i][1]) >= 0) {
