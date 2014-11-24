@@ -3,7 +3,6 @@ var x = [];
 var o = [];
 var winCombo = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]];
 var win = false;
-var reset = document.getElementById("reset");
 
 function divClicked(divNumber) {
 	var playerTurn = document.getElementById("playerTurn");
@@ -11,9 +10,9 @@ function divClicked(divNumber) {
 	var d = document.getElementById(theDiv);
 
 	if(d.innerHTML === "X" || d.innerHTML === "O"){
-		alert("spot taken");}
-	
-	else{
+		alert("spot taken");
+
+	} else {
 		turn+=1;
 
 	if (turn % 2){ 
@@ -22,8 +21,8 @@ function divClicked(divNumber) {
 		d.style.color = "gold";
 		x.push(divNumber);
 		playerTurn.innerHTML = "O's turn";
-		}
-	else {
+
+		} else {
 		d.innerHTML = "O";
 		d.style.backgroundColor = "blue";
 		d.style.color = "white";
