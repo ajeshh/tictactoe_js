@@ -4,7 +4,7 @@ var o = [];
 var winCombo = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]];
 var win = false;
 
-function divClicked(divNumber) {
+var divClicked = function(divNumber) {
 	var playerTurn = document.getElementById("playerTurn");
 	var theDiv = "div" + divNumber;
 	var d = document.getElementById(theDiv);
@@ -17,15 +17,17 @@ function divClicked(divNumber) {
 
 	if (turn % 2){ 
 		d.innerHTML = "X";
-		d.style.backgroundColor = "red"; 
-		d.style.color = "gold";
+		d.style.backgroundColor = "#49c8df"; 
+		d.style.color = "#ffdb21";
+		d.style.fontFamily="Comic Sans,sans-serif";
 		x.push(divNumber);
 		playerTurn.innerHTML = "O's turn";
 
 		} else {
 		d.innerHTML = "O";
-		d.style.backgroundColor = "blue";
-		d.style.color = "white";
+		d.style.backgroundColor = "#525eff";
+		d.style.color = "#ffdb21";
+		d.style.fontFamily="Comic Sans,sans-serif";
 		o.push(divNumber);
 		playerTurn.innerHTML = "X's turn";
 		}
